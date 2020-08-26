@@ -1,6 +1,19 @@
 # heap_allocators
 
-**Implement An Implicit Free List Allocator**
+## Implicit Allocator Performance:
+- 73% utilization
+- 11,048 instructions/request
+
+## Explicit Allocator Performance:
+- 89% utilization
+- 597 instructions/request
+
+**performance calculated using a series of 8 comprehensive, course-provided test scripts*
+<br />
+
+## Instructions
+
+### Implement An Implicit Free List Allocator
 
 Now you're ready to implement your first heap allocator design. The specific features that your implicit free list allocator must support are:
 
@@ -17,7 +30,7 @@ Your implicit free list allocator is not required to:
 
 The bulleted list above indicates the minimum specification that you are required to implement. Further details are intentionally unspecified as we leave these design decisions up to you; this means it is your choice whether you search using first-fit/next-fit/best-fit/worst-fit, and so on. It can be fun to play around with these decisions to see the various effects. Any reasonable and justified choices will be acceptable for grading purposes.
 
-**Implement An Explicit Free List Allocator**
+### Implement An Explicit Free List Allocator
 
 Building on what you learned from writing the implicit version, use the file explicit.c to develop a high-performance allocator that adds an explicit free list as specified in class and in the textbook and includes support for coalescing and in-place realloc.
 
